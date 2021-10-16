@@ -60,7 +60,4 @@ public class Account {
 	public void setCheck(int check) {
 		this.check = check;
 	}
-	
-	
-
 }

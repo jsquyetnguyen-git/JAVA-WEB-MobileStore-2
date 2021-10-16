@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
-  <display-name>PRJ321x_Project_2_FX10152</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
+	<display-name>PRJ321x_Project_2_FX10152</display-name>
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
 
-  <context-param>
-  	<param-name>username</param-name>
-  	<param-value>jsquyetnguyen@gmail.com</param-value>
-  </context-param>
-  <context-param>
-  	<param-name>password</param-name>
-  	<param-value>12345</param-value>
-  </context-param>
-  
-  <servlet>
-  	<servlet-name>LoginServlet</servlet-name>
-  	<servlet-class>controller.LoginServlet</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>LoginServlet</servlet-name>
-  	<url-pattern>/login</url-pattern>
-  </servlet-mapping>
-	
-<servlet>
-	<servlet-name>LogoutServlet</servlet-name>
-	<servlet-class>controller.LogoutServlet</servlet-class>
-</servlet>
+	<context-param>
+		<param-name>username</param-name>
+		<param-value>quyetnv_58@vnu.edu.vn</param-value>
+	</context-param>
 
-<servlet-mapping>
-	<servlet-name>LogoutServlet</servlet-name>
-	<url-pattern>/logout</url-pattern>
-</servlet-mapping>
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>12345</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>controller.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>controller.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+	<session-config>
+		<session-timeout>5000</session-timeout>
+	</session-config>
 
 </web-app>
